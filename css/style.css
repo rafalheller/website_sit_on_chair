@@ -230,3 +230,154 @@ nav .dropdown a {
     padding: 10px 30px;
     border-radius: 10px;
 }
+
+/*  ********************/
+.slider .container {
+    justify-content: space-between;
+    margin-bottom: 30px;
+    display: flex;
+}
+
+.product-model {
+    display: flex;
+    height: 220px;
+    width: 31%;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    position: relative;
+}
+
+.product-model:first-of-type {
+    background-image: url(../images/box1_img.jpg);
+}
+
+.product-model:nth-of-type(2) {
+    background-image: url(../images/box2_img.jpg);
+}
+
+.product-name {
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    background-color: rgba(255, 255, 255, .5);
+    /* opacity: .5; */
+    bottom: 20px;
+    /* display: flex; */
+
+}
+
+.product-name p {
+    font-weight: 700;
+    padding: 20px 0 0 20px;
+
+}
+
+.product-name p::after {
+    content: "";
+    border-bottom: 10px solid #27C7AB;
+    width: 150px;
+    display: block;
+}
+
+.product-description {
+    width: 31%;
+    height: 240px;
+    /* padding: 20px 0 0 20px; */
+    border: solid lightgrey 1px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 15px 30px 15px;
+    justify-content: space-between;
+    line-height: 130%;
+}
+
+.product-description h3::after {
+    content: "";
+    border-bottom: 10px solid #27C7AB;
+    width: 200px;
+    display: block;
+}
+
+/* SECTION PRICE ************************************************* */
+.price-list {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-color: #F1F1F1;
+    padding: 40px 0 40px 0;
+
+}
+
+.price-list .container {
+    display: flex;
+}
+
+.with-underline {
+    text-transform: uppercase;
+    color: gray;
+    width: 100%;
+    font-weight: 200;
+    padding-bottom: 30px;
+}
+
+.price-list .container {
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.with-underline::after {
+    content: "";
+    border-bottom: 10px solid #27C7AB;
+    display: block;
+    width: 27%;
+    padding-top: 10px;
+    /* padding-bottom: 20px; */
+}
+
+.options-cards {
+    width: 31%;
+    height: 500px;
+    border: 2px solid gray;
+    display: flex;
+    flex-direction: column;
+}
+
+.plan-name {
+    width: 100%;
+    height: 50%;
+    background-color: white;
+    position: relative;
+}
+
+.plan-name h2 {
+    text-align: center;
+    padding: 30px 0 30px 0;
+    text-transform: uppercase;
+    font-weight: 200;
+    color: #27C7AB;
+}
+
+.plan-name h2::after {
+    content: "";
+    display: block;
+    width: 25px;
+    height: 25px;
+    background-color: gray;
+    box-shadow: 0px 0px 0px 15px white, 0 0 0 17px gray;
+    border-radius: 50%;
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.circle-price {
+    width: 130px;
+    height: 130px;
+    border: 2px solid gray;
+    border-radius: 50%;
+    /* position: absolute; */
+    margin: 0 auto;
+}
