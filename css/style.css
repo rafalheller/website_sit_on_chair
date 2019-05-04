@@ -222,12 +222,13 @@ nav .dropdown a {
 
 }
 
-.main-button {
+.main-button,
+.button {
     text-decoration: none;
     text-transform: uppercase;
     background-color: #27C7AB;
     color: white;
-    padding: 10px 30px;
+    padding: 7px 30px;
     border-radius: 10px;
 }
 
@@ -304,7 +305,7 @@ nav .dropdown a {
     position: relative;
     display: flex;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     background-color: #F1F1F1;
     padding: 40px 0 40px 0;
 
@@ -320,6 +321,7 @@ nav .dropdown a {
     width: 100%;
     font-weight: 200;
     padding-bottom: 30px;
+    position: relative;
 }
 
 .price-list .container {
@@ -337,11 +339,14 @@ nav .dropdown a {
 }
 
 .options-cards {
+    top: 20px;
     width: 31%;
-    height: 500px;
-    border: 2px solid gray;
+    height: 470px;
+    border: 2px solid #E4E4E4;
+    background-color: #F9F9F9;
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 
 .plan-name {
@@ -364,8 +369,8 @@ nav .dropdown a {
     display: block;
     width: 25px;
     height: 25px;
-    background-color: gray;
-    box-shadow: 0px 0px 0px 15px white, 0 0 0 17px gray;
+    background-color: #E4E4E4;
+    box-shadow: 0px 0px 0px 15px white, 0 0 0 17px #E4E4E4;
     border-radius: 50%;
     position: absolute;
     top: -25px;
@@ -376,8 +381,158 @@ nav .dropdown a {
 .circle-price {
     width: 130px;
     height: 130px;
-    border: 2px solid gray;
+    border: 2px solid #E4E4E4;
     border-radius: 50%;
-    /* position: absolute; */
+    position: relative;
     margin: 0 auto;
+    background-color: white;
+}
+
+.circle-price p {
+    position: absolute;
+    font-size: 18px;
+    color: #E4E4E4;
+    font-weight: 400;
+    bottom: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-transform: uppercase;
+}
+
+.circle-price span {
+    position: absolute;
+    bottom: 40px;
+    left: -30px;
+    font-size: 40px;
+    color: #E4E4E4;
+}
+
+.circle-price span:nth-of-type(2) {
+    left: -5px;
+    bottom: 35px;
+}
+
+.circle-price span:nth-of-type(3) {
+    font-size: 15px;
+    left: 15px;
+    bottom: 70px;
+}
+
+.what-includes {
+    position: relative;
+}
+
+.what-includes ul {
+    list-style: none;
+    text-align: center;
+    color: gray;
+    position: relative;
+
+}
+
+.what-includes ul li {
+    padding: 10px 0;
+
+}
+
+.what-includes li:nth-of-type(odd) {
+    background-color: #E4E4E4;
+    color: darkgray;
+}
+
+.what-includes li:nth-of-type(even) {
+    background-color: #F1F1F1;
+}
+
+.what-includes .button {
+    position: absolute;
+    top: 180px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* STANDARD PLAN CARD */
+.standard {
+    border-color: #27C7AB;
+}
+
+.standard,
+.standard .plan-name {
+    background-color: #27C7AB;
+}
+
+.standard .plan-name h2::after {
+    content: "";
+    display: block;
+    width: 25px;
+    height: 25px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 0px 15px #27C7AB, 0 0 0 17px #27C7AB;
+    border-radius: 50%;
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.standard h2 {
+    color: #ffffff;
+}
+
+.standard p,
+.standard span {
+    color: #27C7AB;
+}
+
+.standard .circle-price {
+    border: #27C7AB;
+}
+
+.standard li:nth-of-type(even) {
+    background-color: #E4E4E4;
+    color: darkgray;
+}
+
+.standard li:nth-of-type(odd) {
+    background-color: #F1F1F1;
+}
+
+.standard .button {
+    color: #27C7AB;
+    background-color: #F1F1F1;
+}
+
+/* SECTION CONTACT */
+#contact {
+    padding: 30px 0;
+}
+
+#contact .form-and-submit {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+#contact .form {
+    height: 150px;
+    width: 55%;
+    /* border: red solid 1px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#contact .name {
+    padding: 5px 5px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+
+#contact .submit {
+    height: 150px;
+    width: 40%;
+    border: 1px solid green;
+    display: flex;
 }
