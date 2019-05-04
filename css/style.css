@@ -639,3 +639,38 @@ nav .dropdown a {
 }
 
 /* FOOTER */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+
+.copyright {
+    color: gray;
+}
+
+.socialmedia-and-logo {
+    display: flex;
+    justify-content: space-between;
+    width: 35%;
+    position: relative;
+}
+
+.social {
+    display: flex;
+}
+
+.social img {
+    cursor: pointer;
+}
+
+.footer .socialmedia-and-logo p {
+    color: gray;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.socialmedia-and-logo span {
+    color: gray;
+}
