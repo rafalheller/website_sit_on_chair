@@ -515,7 +515,8 @@ nav .dropdown a {
 }
 
 #contact .form {
-    height: 150px;
+    height: 330px;
+
     width: 55%;
     /* border: red solid 1px; */
     display: flex;
@@ -523,16 +524,118 @@ nav .dropdown a {
     justify-content: space-between;
 }
 
-#contact .name {
-    padding: 5px 5px;
-    border-radius: 5px;
-    border: 1px solid gray;
+#contact input {
+    border: #27C7AB solid 1px;
+    padding: 10px;
+    color: grey;
+
+}
+
+#contact input.message {
+    height: 200px;
 }
 
 
 #contact .submit {
-    height: 150px;
-    width: 40%;
-    border: 1px solid green;
+    height: 330px;
+    width: 35%;
     display: flex;
+    vertical-align: 10px;
+    flex-direction: column;
+    justify-content: space-between;
 }
+
+.submit img {
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 80%;
+    margin-bottom: 15px;
+    /* margin: 0 auto; */
+}
+
+.submit .accept {
+    display: flex;
+    flex-direction: row;
+}
+
+/* CHECKBOX BUTTON CUSTOM */
+.submit .agree {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    color: lightgray;
+    font-size: 15px;
+    user-select: none;
+}
+
+.agree input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.agree .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+
+}
+
+.agree:hover input~.checkmark {
+    background-color: #ccc;
+}
+
+.agree input:checked~.checkmark {
+    background-color: #27C7AB;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.agree input:checked~.checkmark:after {
+    display: block;
+}
+
+.agree .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+}
+
+
+
+.submit input {
+    color: #27C7AB;
+    width: 40px;
+    height: 40px;
+}
+
+.submit .button {
+    width: 80%;
+    height: 50px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-radius: 5px;
+}
+
+/* FOOTER */
