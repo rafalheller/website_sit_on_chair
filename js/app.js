@@ -1,7 +1,11 @@
 document.addEventListener('DOMContentLoaded', function () {
     hideName();
     changePhoto();
-})
+    seeMore();
+
+
+});
+
 let hideName = function () {
     let divProductModel = document.querySelector('.product-model');
     let productModelTitle = document.querySelector('.product-name');
@@ -61,6 +65,11 @@ let changePhoto = function () {
         picturesArray[picIndex].classList.remove('visible');
         picturesArray[prevPicIndex].classList.add('visible');
         picIndex = prevPicIndex;
-
     });
+}
+let seeMore = function () {
+    let btn = document.querySelector(".main-button");
+    btn.addEventListener('click', function () {
+        swal("Uuuupss", "Musisz chwilę poczekać, strona w budowie!", "warning");
+    })
 }
