@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
     hideName();
+    changePhoto();
 })
 let hideName = function () {
     let divProductModel = document.querySelector('.product-model');
@@ -25,3 +26,41 @@ let hideName = function () {
 };
 
 // == przerobić na funkcję z użyciem THIS.==
+
+let changePhoto = function () {
+    let nextBtn = document.querySelector(".arrow-next");
+    let prevBtn = document.querySelector(".arrow-prev");
+    let picIndex = 0;
+    let picturesArray = [];
+    let picturesList = document.querySelectorAll('.main-item li');
+
+    picturesList.forEach(value => {
+        picturesArray.push(value);
+    });
+
+    picturesArray[picIndex].classList.add("visible");
+
+    nextBtn.addEventListener('click', function () {
+        console.log('next button');
+        let nextPicIndex = picIndex + 1;
+        if (nextPicIndex == picturesArray.length) {
+            nextPicIndex = 0;
+        }
+
+        picturesArray[picIndex].classList.remove('visible');
+        picturesArray[nextPicIndex].classList.add('visible');
+        picIndex = nextPicIndex;
+    });
+    prevBtn.addEventListener('click', function () {
+        console.log('prev button');
+        let prevPicIndex = picIndex - 1;
+        if (prevPicIndex < 0) {
+            prevPicIndex = picturesArray.length - 1;
+        }
+
+        picturesArray[picIndex].classList.remove('visible');
+        picturesArray[prevPicIndex].classList.add('visible');
+        picIndex = prevPicIndex;
+
+    });
+}
