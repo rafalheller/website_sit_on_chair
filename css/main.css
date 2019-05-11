@@ -1,0 +1,78 @@
+/* line 1, scss/settings/_reset.scss */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+
+/* line 8, scss/settings/_reset.scss */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 1, scss/generic/_all.scss */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* line 2, scss/elements/_menu.scss */
+#header {
+  width: 100%;
+  background-color: black;
+}
+
+/* line 7, scss/elements/_menu.scss */
+#header .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* line 11, scss/elements/_menu.scss */
+#header .container .logo {
+  color: white;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  transition: .3s;
+  cursor: pointer;
+}
+
+/* line 19, scss/elements/_menu.scss */
+#header .container .logo:hover {
+  font-size: 1.1em;
+}
+
+/* line 23, scss/elements/_menu.scss */
+#header .container .logo span {
+  font-weight: 800;
+  color: turquoise;
+}
+
+/* line 30, scss/elements/_menu.scss */
+#header .container ul {
+  display: flex;
+}
+
+/* line 33, scss/elements/_menu.scss */
+#header .container ul li {
+  padding: 1em 0 1em 3em;
+  cursor: pointer;
+}
+
+/* line 37, scss/elements/_menu.scss */
+#header .container ul li:hover a {
+  color: #e6e6e6;
+}
+
+/* line 43, scss/elements/_menu.scss */
+#header .container ul a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 1px;
+}

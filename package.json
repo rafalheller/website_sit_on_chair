@@ -1,0 +1,21 @@
+{
+  "name": "sit_on_chair",
+  "version": "1.0.0",
+  "description": "website with chairs This is my first repository with website with chair.",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rafalheller/website_sit_on_chair.git"
+  },
+  "author": "rafal heller",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rafalheller/website_sit_on_chair/issues"
+  },
+  "homepage": "https://github.com/rafalheller/website_sit_on_chair#readme"
+}

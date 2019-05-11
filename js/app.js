@@ -70,6 +70,6 @@ let changePhoto = function () {
 let seeMore = function () {
     let btn = document.querySelector(".main-button");
     btn.addEventListener('click', function () {
-        swal("Uuuupss", "Musisz chwilę poczekać, strona w budowie!", "warning");
+        swal("Uuuupss", "Musisz chwilę poczekać, strona w budowie!", "error");
     })
 }
