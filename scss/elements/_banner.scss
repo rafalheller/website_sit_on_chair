@@ -1,3 +1,79 @@
 .main {
-    background-color: white;
+    background: $color-background-banner;
+    width: 100%;
+    padding-top: 2em;
+
+    .container {
+        display: flex;
+
+
+        .main-item {
+            width: 50%;
+            // border: 1px solid red;
+            width: 47%;
+            display: flex;
+        }
+
+
+        .description {
+            padding: 3em 3em;
+            // border: 1px solid green;
+            width: 47%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            line-height: 150%;
+            text-align: center;
+
+            h1 {
+                text-transform: uppercase;
+                font-size: 3em;
+                font-weight: 500;
+                line-height: 120%;
+
+                span {
+                    color: $color-primary;
+                    font-weight: 800;
+                }
+            }
+
+        }
+    }
+}
+
+// ====================>
+// arrows
+.arrow {
+    display: flex;
+
+
+    p {
+        font-size: 5em;
+        color: $color-primary;
+        margin: auto 0;
+        cursor: pointer;
+
+        &:hover {
+            color: darken($color-primary, 10%)
+        }
+    }
+
+}
+
+.button {
+    padding: 0.5em 2em;
+    margin: 0.5em 0;
+    color: $color-light;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: $color-primary;
+    border-radius: $border-radius;
+    transition: .3s;
+
+
+    &:hover {
+        background-color: darken($color-primary, 5%);
+        color: darken($color-light, 10%);
+    }
 }
