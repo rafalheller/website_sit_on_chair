@@ -76,3 +76,8 @@ ul {
   font-weight: 800;
   letter-spacing: 1px;
 }
+
+/* line 1, scss/elements/_banner.scss */
+.main {
+  background-color: white;
+}
