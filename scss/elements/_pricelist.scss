@@ -1,0 +1,108 @@
+.price-list {
+
+    width: 100%;
+    background-color: #F1F1F1;
+    padding: 1em 0 1em 0;
+    margin: 3em 0;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+
+
+    }
+}
+
+
+
+.options-cards {
+    border: 1px solid black;
+    width: 30%;
+    padding: 1em 0;
+    position: relative;
+
+
+
+    // display: inline-block;
+    .plan-name {
+        text-align: center;
+        text-transform: uppercase;
+        // position: relative;
+
+        h2 {
+            color: $color-primary;
+            margin: 1rem 0;
+
+            &::after {
+                @include circle;
+            }
+
+
+
+        }
+
+        .circle-price {
+            margin: 0 auto;
+            border: 1px solid gray;
+            width: 10em;
+            height: 10em;
+            background-color: $color-light;
+            border-radius: 50%;
+
+            p {
+                line-height: 10em;
+            }
+        }
+    }
+
+}
+
+.what-includes {
+    padding-top: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        li {
+            text-align: center;
+            padding: 0.5em;
+            background-color: pink;
+            width: 100%;
+
+            &:nth-of-type(odd) {
+                background-color: blue;
+            }
+
+            &::nth-of-type(even) {}
+        }
+    }
+
+    .button {
+        text-align: center;
+        width: 50%;
+        justify-items: center;
+        // position: absolute;
+        // bottom: 0;
+        // left: 50%;
+        // transform: translateX(-50%);
+
+    }
+}
+
+.with-underline {
+    text-transform: uppercase;
+
+
+    &::after {
+        @include underline;
+
+    }
+}
